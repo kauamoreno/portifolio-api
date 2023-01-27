@@ -9,17 +9,49 @@
 
     <link rel="stylesheet" href="css/dolar.css">
     <script src="js/dolar.js"></script>
+
+    <style>
+        main{
+            position: relative;
+            background-image: linear-gradient(180deg, #b2f34f 0, #95ed59 12.5%, #76e561 25%, #52da69 37.5%, #1ecd6f 50%, #00c074 62.5%, #00b479 75%, #00aa7e 87.5%, #00a184 100%);
+        }
+
+        main:before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url(img/wave.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #imagem{
+            width: 300px;
+        }
+
+        #dolarAgora{
+
+        }
+    </style>
 </head>
 <body>
-    <div id="imagem">
-        <img src="img/dolar.jpg" alt="">
-    </div>
 
-    <div id="informacoesDolar">
-        <div id="dolarAgora"></div>
-        <div id="dolarAlta"></div>
-        <div id="dolarBaixa"></div>
-    </div>
+    <main>
+        <div id="imagem">
+            <img src="img/dolar.jpg" alt="" id="imagem">
+        </div>
+    
+        <div id="informacoesDolar">
+            <div>R$ 1</div>
+            <div id="dolarAgora"></div>
+            <div id="dolarAlta"></div>
+            <div id="dolarBaixa"></div>
+        </div>
+    </main>
+    
 
     
 </body>
