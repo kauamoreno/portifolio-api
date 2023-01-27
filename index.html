@@ -10,40 +10,10 @@
 
     <style>
 
-        *{
-            padding: 0;
-            margin: 0;
-            text-decoration: none;
-        }
-        .card{
-            display: flex;
-            flex-direction: column;
-            width: 450px;
-            background-color: rgb(252, 252, 252);
-            border-radius: 10px;
-        }
-
-        .card:hover{
-            transition: 1;
-		    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
-		    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
-		    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
-        }
-
-        img{
-            width: 450px;
-            height: 300px;
-        }
-
-        p{
-            width: 430px;
-            text-align: justify;
-        }
-
         main{
             position: relative;
             background-image: linear-gradient(180deg, #ff0feb 0, #e719e5 16.67%, #c41ddb 33.33%, #a01ecd 50%, #7c1ebe 66.67%, #581db0 83.33%, #301ca2 100%);
-            height: 870px;
+            height: 890px;
         }
 
         main:before{
@@ -58,13 +28,6 @@
             background-repeat: no-repeat;
         }
 
-        #titulo{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 30px;
-            color: white;
-            text-align: center;
-        }
-
         .row{
             width: 100%;
             display: flex;
@@ -76,7 +39,7 @@
 </head>
 <body>
     <main>
-        <div id="titulo">
+        <div id="titulo-index" class="titulo">
             <h1>Meus trabalhos recentes com APIs: um tour pelo meu portfólio</h1>
         </div>
 
@@ -84,12 +47,12 @@
         <div class="row">
             <div class="card" id="card-dolar">
                 <a href="dolar.html">
-                    <div class="imagem">
-                        <img src="img/index/dolar.jpg" alt="">
+                    <div>
+                        <img src="img/index/dolar.jpg" alt="Imagem Ilustrativa" class="imagens-index">
                     </div>
-                    <div class="texto">
+                    <div>
                         <center>
-                            <p>
+                            <p class="texto-index">
                                 O dólar é a moeda oficial dos EUA, controlado pelo Federal Reserve e é amplamente utilizado como moeda de reserva e meio de troca internacional, cujo valor é determinado pelo mercado de câmbio e é afetado por fatores econômicos, políticos e geopolíticos.
                             </p>
                         </center>
@@ -99,12 +62,12 @@
     
             <div class="card" id="card-cep">
                 <a href="cep.html">
-                    <div class="imagem">
-                        <img src="img/index/casa.jfif" alt="">
+                    <div>
+                        <img src="img/index/casa.jfif" alt="Imagem Ilustrativa" class="imagens-index">
                     </div>
-                    <div class="texto">
+                    <div>
                         <center>
-                            <p>
+                            <p class="texto-index">
                                 CEP é uma sigla para "Código de Endereçamento Postal" utilizado no Brasil para identificar endereços de forma única, composto por 8 dígitos e é atribuído pela Brasil Correios e Telégrafos. Ele facilita a entrega de correspondências e encomendas e também é usado por outras instituições para identificar a localização de seus clientes.
                             </p>
                         </center>
