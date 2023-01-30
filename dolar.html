@@ -6,35 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="30" /> <!--Serve para sempre atualizar a pagina-->
     <title>Dolar atualizado</title>
-
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/dolar.js"></script>
 
     <style>
-
-        main{
-            position: relative;
-            background-image: linear-gradient(180deg, #b2f34f 0, #95ed59 12.5%, #76e561 25%, #52da69 37.5%, #1ecd6f 50%, #00c074 62.5%, #00b479 75%, #00aa7e 87.5%, #00a184 100%);
-            height: 840px;
-        }
-
-        main:before{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 240px;
-            background: url(img/wave.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .row{
-            display: flex;
-            flex-direction: row;
-        }
-
         .teste{
             width: 1000px;
             height: 500px;
@@ -49,12 +23,12 @@
 </head>
 <body>
 
-    <main>
+    <main id="main-dolar">
         <div id="titulo-dolar" class="titulo">
             <h1>Dolar Hoje</h1>
         </div>
 
-        <div class="row">
+        <div class="row-dolar">
             <div id="imagem">
                 <img src="img/cifrao-salario.png" alt="Imagem Ilustrativa" id="imagem-dolar">
             </div>
@@ -92,6 +66,6 @@
         </div>
     </footer>   
 
-    
+    <script src="js/dolar.js"></script>
 </body>
 </html>

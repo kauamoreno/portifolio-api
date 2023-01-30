@@ -5,43 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de CEP</title>
-    
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        fieldset {
-            background-color: #eeeeee;
-        }
-          
-        legend {
-            background-color: gray;
-            color: white;
-            padding: 5px 10px;
-        }
-          
-        
-
-        main{
-            position: relative;
-            background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
-            height: 840px;
-        }
-
-        main:before{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 240px;
-            background: url(img/wave.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-    </style>
 </head>
 <body>
-    <main>
+    <main id="main-cep">
         <fieldset>
             <legend>Endereço</legend>
     
@@ -102,6 +69,5 @@
     </footer>
 
     <script src="js/cep.js"></script>
-
 </body>
 </html>

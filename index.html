@@ -7,45 +7,15 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="css/style.css">
-
-    <style>
-
-        main{
-            position: relative;
-            background-image: linear-gradient(180deg, #ff0feb 0, #e719e5 16.67%, #c41ddb 33.33%, #a01ecd 50%, #7c1ebe 66.67%, #581db0 83.33%, #301ca2 100%);
-            height: 840px;
-        }
-
-        main:before{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 240px;
-            background: url(img/wave.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .row{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin-top: 100px;
-        }
-
-    </style>
 </head>
 <body>
-    <main>
+    <main id="main-index">
         <div id="titulo-index" class="titulo">
             <h1>Meus trabalhos recentes com APIs: um tour pelo meu portfólio</h1>
         </div>
 
 
-        <div class="row">
+        <div class="row-index">
             <div class="card" id="card-dolar">
                 <a href="dolar.html">
                     <div>
@@ -77,6 +47,7 @@
             </div>
         </div>
     </main>
+
     <footer>
         <div>
             <div class="redes-sociais">
