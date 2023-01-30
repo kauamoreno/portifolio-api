@@ -4,38 +4,69 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .titulo{
     color: white;
     text-align: center;
     padding-top: 20px;
 }
 
+
+/******************************** FOOTER *********************************/
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+
+    /* Para ficar no centro-row */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links a{
+    font-size: 22px;
+    margin-top: 25px;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+}
+.copy{
+    font-size: 17px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div{
+    width: 450px;
+}
+.redes-sociais, .links{
+    display: flex;
+    justify-content: space-around;
+}
+
 /*************************** Pagina INDEX.HTML ***************************/
 #titulo-index{
     font-size: 30px;
 }
-
 .card{
     display: flex;
     flex-direction: column;
     width: 450px;
+    height: 400px;
     background-color: rgb(252, 252, 252);
     border-radius: 10px;
 }
-
 .card:hover{
-    transition: 1;
+    transition: 150ms;
     -webkit-box-shadow: 0px 0px 35px 30px rgba(0,0,0,0.16);
     -moz-box-shadow: 0px 0px 35px 30px rgba(0,0,0,0.16);
     box-shadow: 0px 0px 35px 30px rgba(0,0,0,0.16);
 }
-
 .imagens-index{
     width: 450px;
     height: 300px;
 }
-
 .texto-index{
     width: 430px;
     text-align: justify;
@@ -49,14 +80,14 @@
 #titulo-dolar{
     font-size: 40px;
 }
-
 #imagem-dolar{
     margin-left: 10px;
     height: 500px;
     width: 500px;
 }
 
-/**************************** Pagina CEO.HTML ****************************/
+
+/**************************** Pagina CEP.HTML ****************************/
 .input-cep {
     margin: 5px;
 }
