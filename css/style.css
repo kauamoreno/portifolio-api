@@ -127,6 +127,11 @@ main:before{
     .texto-index{
         font-size: 18px;
     }
+
+    /* TENTAR USAR PARA OS ELEMENTOS NÃO INVADIR O FOOTER */
+    header, footer {
+        padding: 10px;
+    }
 }
 
 
@@ -162,9 +167,20 @@ main:before{
 }
 fieldset {
     background-color: #eeeeee;
+    width: 500px;
 } 
 legend {
     background-color: gray;
     color: white;
     padding: 5px 10px;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+fieldset div{
+    display: flex;
+    justify-content: center;
 }
