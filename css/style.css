@@ -44,14 +44,27 @@ footer div{
     display: flex;
     justify-content: space-around;
 }
+footer .wave{
 
-
+    position: relative;     
+    height: 840px;    
+    position: absolute;    
+    bottom: 0;    
+    left: 0;    
+    width: 100%;    
+    height: 240px;    
+    background: url(../img/wave.svg);    
+    background-size: cover;    
+    background-repeat: no-repeat;
+    
+  }
 /********************************* MAIN **********************************/
 main{
     position: relative; 
     height: 840px;
+    margin-bottom: 50px;
 }
-main:before{
+/* main:before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -61,7 +74,7 @@ main:before{
     background: url(../img/wave.svg);
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 #main-index{
     background-image: linear-gradient(180deg, #ff0feb 0, #e719e5 16.67%, #c41ddb 33.33%, #a01ecd 50%, #7c1ebe 66.67%, #581db0 83.33%, #301ca2 100%);
 }
