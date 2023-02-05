@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,28 @@
     <title>Buscador de CEP</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <main id="main-cep">
-        <fieldset>
-            <legend>Endereço</legend>
-    
-            <div>
-                <label for="cep">CEP</label>
-                <input type="text" id="cep" autocomplete="off" class="input-cep">
+
+        <div class="principal">
+            <div class="titulo">
+                <h1>Buscador de CEP</h1>
             </div>
     
+            <div class="input-cep">
+                <input type="text" id="cep" autocomplete="off" placeholder="CEP">
+    
+                <button id="btnPesquisa">Pesquisar</button>
+            </div>
+        </div>
+
+        <div class="info">
             <div>
                 <label for="rua">Rua:</label>
                 <input type="text" id="rua" readonly>
             </div>
-            
+    
             <div>
                 <label for="numero">Numero</label>
                 <input type="text" id="numero" autocomplete="off" class="input-cep" readonly>
@@ -36,13 +44,14 @@
                 <label for="cidade">Cidade</label>
                 <input type="text" id="cidade" autocomplete="off" class="input-cep" readonly>
             </div>
-            
+    
             <div>
                 <label for="estado">Estado</label>
                 <input type="text" id="estado" autocomplete="off" class="input-cep" readonly>
             </div>
     
-        </fieldset>
+        </div>
+        
     </main>
 
     <footer>
@@ -68,6 +77,8 @@
         </div>
     </footer>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/cep.js"></script>
 </body>
+
 </html>

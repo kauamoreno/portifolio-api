@@ -163,18 +163,12 @@ main:before{
 
 /**************************** Pagina CEP.HTML ****************************/
 .input-cep {
-    margin: 5px;
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
-fieldset {
-    background-color: #eeeeee;
-    width: 500px;
-} 
-legend {
-    background-color: gray;
-    color: white;
-    padding: 5px 10px;
-}
-input{
+input, button{
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #000;
@@ -183,4 +177,13 @@ input{
 fieldset div{
     display: flex;
     justify-content: center;
+}
+
+#main-cep{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    display: none;
 }

@@ -1,26 +1,29 @@
-const prencherFormulario = (endereço) => {
-    document.getElementById("rua").value = endereço.logradouro;
-    document.getElementById("bairro").value = endereço.bairro;
-    document.getElementById("cidade").value = endereço.localidade;
-    document.getElementById("estado").value = endereço.uf;
-}
 
-const cepValido = (cep) => {
-    if (cep.length == 8){
-        return true;
-    }else{
-        return false;
+document.getElementById("btnPesquisa").addEventListener("click", function () {
+
+
+    const prencherFormulario = (endereço) => {
+        document.getElementById("rua").value = endereço.logradouro;
+        document.getElementById("bairro").value = endereço.bairro;
+        document.getElementById("cidade").value = endereço.localidade;
+        document.getElementById("estado").value = endereço.uf;
     }
-}
 
-const pesquisaCep = async () => {
     const cep = document.getElementById("cep").value;
-    const url = `https://viacep.com.br/ws/${cep}/json/`;
-    if (cepValido(cep)){
-        const dados = await fetch(url);
-        const endereco = await dados.json();
-        prencherFormulario(endereco);
-    }
-}
-
-document.getElementById("cep").addEventListener("focusout", pesquisaCep);
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (dados) {
+            prencherFormulario(dados)
+            document.querySelector(".info").style.display = "block";
+        })
+        .catch(function (erro) {
+            Swal.fire({
+                icon: 'error',
+                title: "CEP não reconhecido",
+                text: 'Insira um cep existente!',
+                footer: '<a href="">Why do I have this issue?</a>'
+            })
+        });
+});
