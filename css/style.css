@@ -9,6 +9,9 @@
     text-align: center;
     padding-top: 20px;
 }
+#titulo-index, #titulo-cep{
+    font-size: 30px;
+}
 
 
 /******************************** FOOTER *********************************/
@@ -74,9 +77,6 @@ main:before{
 
 
 /*************************** Pagina INDEX.HTML ***************************/
-#titulo-index{
-    font-size: 30px;
-}
 .card{
     display: flex;
     flex-direction: column;
@@ -162,28 +162,45 @@ main:before{
 
 
 /**************************** Pagina CEP.HTML ****************************/
+.principal{
+    display: flex;
+    flex-direction: column;
+}
+#titulo-cep{
+    margin-bottom: 50px;
+}
 .input-cep {
-    margin-top: 50px;
-    width: 50%;
     display: flex;
     justify-content: space-around;
+}
+.input-cep input{
+    width: 40%;
 }
 input, button{
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #000;
 }
-
-fieldset div{
+.informacao div{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
+.informacao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    /* width: 80%; */
+}                                   
 #main-cep{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
-
+.informacao div input{
+    margin: 10px 0 10px 0;
+    width: 50%;
+}
 .info{
     display: none;
 }
