@@ -133,6 +133,11 @@ main:before{
         padding: 10px;
     }
 }
+@media(max-width: 900px){
+    #main-index{
+        height: 1750px;
+    }
+}
 
 
 /*************************** Pagina DOLAR.HTML ***************************/
