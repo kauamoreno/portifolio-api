@@ -311,3 +311,21 @@ button {
 #formulario div {
     margin-top: 20px;
 }
+
+#formulario label{
+    display: none;
+}
+
+@media print{
+    footer{
+        display: none;
+    }
+
+    #formulario label{
+        display: block;
+    } 
+
+    button{
+        display: none;
+    }
+}
