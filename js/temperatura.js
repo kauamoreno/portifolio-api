@@ -7,7 +7,6 @@ obter a previsão
 function pesquisar() {
 
     var cidade = document.getElementById("cidade").value;
-    var newCidade = cidade.replace(/ /g, "%20");
 
     //Esta linha define a função getWeather como uma função assincron, esperando uma resposta da API
     async function getWeather() {
@@ -16,7 +15,7 @@ function pesquisar() {
         //A unidade de medida (Celsius) e a chave API KEY
 
         //const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=Mogi%20das%20Cruzes&units=metric&appid=64ed82577ced7f69cb1687f0ce536131')
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${newCidade}&units=metric&appid=64ed82577ced7f69cb1687f0ce536131`);
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=64ed82577ced7f69cb1687f0ce536131`);
 
 
         //Resposta em (Celsius e localização)
