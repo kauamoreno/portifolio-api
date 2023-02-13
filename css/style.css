@@ -61,7 +61,7 @@ footer div {
 /********************************* MAIN **********************************/
 main {
     position: relative;
-    height: 840px;
+    height: 860px;
 }
 
 main:before {
@@ -135,10 +135,11 @@ main:before {
     }
 
     #main-index {
-        height: 1500px;
+        height: 2020px;
     }
 
-    #card-cep {
+    #card-cep,
+    #card-envioFormulario {
         margin-top: 70px;
     }
 
@@ -159,7 +160,7 @@ main:before {
 
 @media(max-width: 900px) {
     #main-index {
-        height: 1750px;
+        height: 2250px;
     }
 }
 
@@ -297,11 +298,14 @@ button {
 #main-envioFormulario {
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: white;
 }
 
 #formulario {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 
 #formulario div {
