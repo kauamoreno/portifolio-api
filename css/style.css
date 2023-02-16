@@ -306,6 +306,8 @@ button {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 #formulario div {
@@ -314,6 +316,21 @@ button {
 
 #formulario label{
     display: none;
+}
+
+#formulario input{
+    padding: 15px;
+}
+
+#cpf{
+    width: 60%;
+}
+#idade{
+    width: 23%;
+}
+
+#telefone{
+    width: 200%;
 }
 
 @media print{
