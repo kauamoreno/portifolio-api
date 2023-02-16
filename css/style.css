@@ -88,6 +88,10 @@ main:before {
     background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
 }
 
+#main-temperatura{
+    background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
+}
+
 
 /*************************** Pagina INDEX.HTML ***************************/
 .card {
@@ -329,10 +333,6 @@ button {
     width: 23%;
 }
 
-#telefone{
-    width: 200%;
-}
-
 @media print{
     footer{
         display: none;
@@ -344,5 +344,38 @@ button {
 
     button{
         display: none;
+    }
+}
+
+
+/************************** TEMPERATURA.HTML ***************************/
+#main-temperatura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width: 1025px) {
+    #main-temperatura{
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-temperatura img{
+        width: 80%;
+    }
+}
+
+@media(max-width: 800px) {
+    .img-temperatura img{
+        width: 100%;
     }
 }

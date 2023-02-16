@@ -7,19 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
     <title>Tempo</title>
+
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
+    <main id="main-temperatura">
+        <div class="content">
+            <h1>Cidade</h1>
+            <p id="temperatura">carregando...</p>
 
-    <h1>Cidade</h1>
-    <p id="temperatura">carregando...</p>
+            <input type="text" id="cidade" placeholder="Cidade">
+            <button id="pesquisa" onclick="pesquisar()">Pesquisar</button>
+        </div>
 
-    <input type="text" id="cidade" placeholder="Cidade">
-    <button id="pesquisa" onclick="pesquisar()">Pesquisar</button>
+        <div class="img-temperatura">
+            <img width="700px" src="img/Weather-cuate.png" alt="">
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div>
+            <div class="redes-sociais">
+                <a href=""><img src="img/social-media/github.png" alt="Github"></a>
+                <a href=""><img src="img/social-media/linkedin.png" alt="Linkedin"></a>
+                <a href=""><img src="img/social-media/email.png" alt="Email"></a>
+                <a href=""><img src="img/social-media/facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Team</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="copy">
+                © 2023 Copyright: Kauã Moreno
+            </div>
+        </div>
+    </footer>
 
     <script src="js/temperatura.js"></script>
-    
+
 </body>
 
 </html>

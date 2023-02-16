@@ -23,7 +23,6 @@ document.getElementById("btnPesquisa").addEventListener("click", function () {
                 icon: 'error',
                 title: "CEP não reconhecido",
                 text: 'Insira um cep existente!',
-                footer: '<a href="">Why do I have this issue?</a>'
             })
         });
 });
