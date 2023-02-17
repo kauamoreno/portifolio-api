@@ -358,12 +358,32 @@ button {
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: -250px;
+}
+
+.pesquisa-temp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cidade{
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+}
+
+#pesquisa{
+    margin-top: 30px;
+    width: 50%;
+    padding: 20px;
+    border-radius: 50px;
 }
 
 @media(max-width: 1025px) {
     #main-temperatura{
-        height: 1300px;
+        height: 1200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -372,10 +392,18 @@ button {
     .img-temperatura img{
         width: 80%;
     }
+
+    .content{
+        margin-top: -150px;
+    }
 }
 
 @media(max-width: 800px) {
     .img-temperatura img{
         width: 100%;
+    }
+
+    .content{
+        margin-top: -330px;
     }
 }
