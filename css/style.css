@@ -407,3 +407,52 @@ button {
         margin-top: -330px;
     }
 }
+
+
+/************************** JSONINTERNO.HTML ***************************/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #e0e0e0;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.tela {
+    margin-top: 20px;
+}
+input,
+button {
+    padding: 10px;
+    border: 1px solid black;
+}
+button {
+    border-radius: 5px;
+    background-color: rgba(251, 255, 12, 0.8);
+}
+button:hover {
+    transition: 50ms;
+    background-color: rgba(251, 255, 12, 0.5);
+}
+#dados {
+    display: none;
+    background-color: rgba(251, 255, 12, 0.7);
+
+    -webkit-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
+}
+.dados-interior {
+    padding: 5px 5px 5px 5px;
+    margin-top: 100px;
+}
+.titulo {
+    text-align: center;
+}
+.areaInput {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}

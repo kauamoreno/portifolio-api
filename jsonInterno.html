@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
-    <title>Tempo</title>
-
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Consumo de API interna</title>
 </head>
-
 <body>
-    <main id="main-temperatura">
-        <div class="content">
-            <div class="txt-temp">
-                <h1>Temperatura API</h1>
-                <h3>Escreva a sua cidade para receber sua temperatura</h3>
+
+    <main>
+        <div class="tela">
+
+            <div class="titulo">
+                <h1>Pesquisa de usuário</h1>
             </div>
-
-
-            <div class="pesquisa-temp">
-                <input type="text" id="cidade" placeholder="Cidade">
+            <div class="areaInput">
+                <input type="text" placeholder="Digite o CPF" id="cpf">
                 <button id="pesquisa" onclick="pesquisar()">Pesquisar</button>
-                <div id="temperatura"></div>
+            </div>
+
+            <div id="dados">
+                <div class="dados-interior">
+                    <div class="titulo">
+                        <h3>Dados do Usuário</h3>
+                    </div>
+                    <div class="txt">
+                        <p id="nome">CPF: </p>
+                        <p id="idade">Idade: </p>
+                        <p id="profissao">Profissão: </p>
+                    </div>
+                </div>
             </div>
 
         </div>
-
-
-
-
-
-        <div class="img-temperatura">
-            <img width="700px" src="img/Weather-cuate.png" alt="">
-        </div>
-
     </main>
-
-
 
     <footer>
         <div>
@@ -62,8 +57,8 @@
         </div>
     </footer>
 
-    <script src="js/temperatura.js"></script>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/jsonInterno.js"></script>
+    
 </body>
-
 </html>
