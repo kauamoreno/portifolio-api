@@ -1,0 +1,25 @@
+{
+    "nirvana": {
+        "name": "Nirvana",
+        "album": "Unplugged In New York",
+        "style": "Rock",
+        "price": "R$ 29.99",
+        "imagem": "<img src='assets/img/ecommerce/nirvana.png'>"
+    },
+
+    "queen":{
+        "name": "Queen",
+        "album": "A Night at the Opera",
+        "style": "Rock",
+        "price": "R$ 139.99",
+        "imagem": "<img src='assets/img/ecommerce/queen.webp'>"
+    },
+
+    "guns":{
+        "name": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "style": "Rock",
+        "price": "R$ 69.99",
+        "imagem": "<img src='assets/img/ecommerce/guns.webp'>"
+    }
+}

@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce - Json Interno</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
 </head>
+
 <body>
-    
-    <h1>E-commerce fake API</h1>
-    <div id="imagem"></div>
-    <div id="nome"></div>
-    <div id="disco"></div>
-    <div id="estilo"></div>
-    <div id="preco"></div>
+
+    <main id="main-ecommerce">
+        <div class="titulo">
+            <h1>E-commerce fake API</h1>
+        </div>
+
+        <div class="inf">
+
+            <div class="nirvana">
+                <div id="imagem-nirvana"></div>
+                <div id="nome-nirvana">Nome: </div>
+                <div id="disco-nirvana">Album: </div>
+                <div id="estilo-nirvana">Estilo: </div>
+                <div id="preco-nirvana">Preço: </div>
+            </div>
+
+            <div class="queen">
+                <div id="imagem-queen"></div>
+                <div id="nome-queen">Nome: </div>
+                <div id="disco-queen">Album: </div>
+                <div id="estilo-queen">Estilo: </div>
+                <div id="preco-queen">Preço: </div>
+            </div>
+
+            <div class="guns">
+                <div id="imagem-guns"></div>
+                <div id="nome-guns">Nome: </div>
+                <div id="disco-guns">Album: </div>
+                <div id="estilo-guns">Estilo: </div>
+                <div id="preco-guns">Preço: </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="espaco">
+
+        </div>
+        <div class="flex">
+            <div>
+                <div class="redes-sociais">
+                    <a href=""><img src="assets/img/social-media/github.png" alt="Github"></a>
+                    <a href=""><img src="assets/img/social-media/linkedin.png" alt="Linkedin"></a>
+                    <a href=""><img src="assets/img/social-media/email.png" alt="Email"></a>
+                    <a href=""><img src="assets/img/social-media/facebook.png" alt="Facebook"></a>
+                </div>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Team</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="copy">
+                    © 2023 Copyright: Kauã Moreno
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!----------------SCRIPTS---------------->
+    <script src="assets/json/dadosEcommerce.json"></script>
     <script src="assets/js/ecommerce.js"></script>
 
 </body>
+
 </html>

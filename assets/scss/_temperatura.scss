@@ -1,0 +1,61 @@
+@import './variaveisEFuncoes';
+
+$inputLarg: 220px;
+$inputAlt: 60px;
+$inputpadding: 10px;
+
+
+#main-temperatura {
+    background-image: $corTemperatura;
+    @include displayFlex(row, space-around, none);
+
+    .content {
+        @include displayFlex(column, space-evenly, center);
+
+        .txt-temp {
+            text-align: center;
+            @include titulo(rgb(0, 0, 0), 30px, 20px);
+        }
+
+        .pesquisa-temp {
+            @include displayFlex(column, none, center);
+
+            #cidade {
+                height: $inputAlt;
+                width: $inputLarg;
+            }
+
+            #pesquisa {
+                height: $inputAlt;
+                width: $inputLarg;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1025px) {
+    #main-temperatura {
+        height: 1000px;
+        @include displayFlex(column, center, none);
+
+        .img-temperatura {
+            img {
+                width: 80%;
+
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    #main-temperatura {
+        height: 900px;
+
+        .img-temperatura {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

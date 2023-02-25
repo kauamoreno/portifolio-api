@@ -1,0 +1,52 @@
+@import './variaveisEFuncoes';
+
+#main-cep {
+
+    @include displayFlex(column, none, none);
+    height: 700px;
+    background-image: $corCep;
+
+    .principal {
+        @include displayFlex(column, none, none);
+
+        #titulo-cep {
+            margin-bottom: 50px;
+            @include displayFlex(none, center, none);
+            @include titulo(black, 40px, 30px);
+        }
+    }
+
+    .input-cep {
+        @include displayFlex(none, space-around, none);
+
+        input {
+            width: 40%;
+        }
+    }
+
+    input,
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #000;
+    }
+
+    .info {
+        display: none;
+
+        .informacao {
+            margin-top: 20px;
+            padding: 20px;
+            @include displayFlex(column, none, none);
+
+            div {
+                @include displayFlex(none, center, center);
+            }
+
+            div input {
+                margin: 10px 0 10px 0;
+                width: 50%;
+            }
+        }
+    }
+}
