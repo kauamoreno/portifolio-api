@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes pesquisa</title>
+
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+<body>
+
+
+    <main id="main-movie">
+        <div id="titulo-pagina">
+            <h1>Pesquisador de Filmes</h1>
+        </div>
+        <div class="pesquisa">
+            <input type="text" id="filme" placeholder="Somente em inglês">
+            <button onclick="pesquisa()">Pesquisar</button>
+        </div>
+        <div id="display">
+            <div class="content">
+                <div class="img">
+                    <img src="" alt="" id="poster">
+                </div>
+                <div class="dados">
+                    <div id="titulo"></div>
+                    <div id="resumo"></div> <br>
+                    <div id="lancamento"></div>
+                    <div id="genero"></div>
+                    <div id="duracao"></div> <br>
+                    <div class="imdb">
+                        <div id="rating"></div>
+                        <div id="votos"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="espaco">
+
+        </div>
+        <div class="flex">
+            <div>
+                <div class="redes-sociais">
+                    <a href=""><img src="assets/img/social-media/github.png" alt="Github"></a>
+                    <a href=""><img src="assets/img/social-media/linkedin.png" alt="Linkedin"></a>
+                    <a href=""><img src="assets/img/social-media/email.png" alt="Email"></a>
+                    <a href=""><img src="assets/img/social-media/facebook.png" alt="Facebook"></a>
+                </div>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="">About</a>
+                    <a href="">Services</a>
+                    <a href="">Team</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="copy">
+                    © 2023 Copyright: Kauã Moreno
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!----------------SCRIPTS---------------->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/movie.js"></script>
+
+</body>
+</html>

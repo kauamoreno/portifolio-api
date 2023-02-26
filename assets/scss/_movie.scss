@@ -1,0 +1,90 @@
+@import './variaveisEFuncoes';
+
+#main-movie {
+
+    height: 740px;
+
+    #titulo-pagina {
+        @include titulo(brown, 20px, 30px);
+        text-align: center;
+        margin-bottom: 40px;
+
+    }
+
+    .pesquisa {
+        width: 500px;
+        @include displayFlex(none, space-around, center);
+        margin: 0 auto;
+
+        input,
+        button {
+            padding: 10px;
+            border-radius: 7px;
+            border: 1px solid black;
+        }
+
+        input {
+            width: 100%;
+            margin-right: 10px;
+        }
+
+    }
+
+    #display {
+        display: none;
+
+        .content {
+            @include displayFlex(row, center, none);
+            margin-top: 70px;
+
+            .img {
+                margin-left: 10px;
+            }
+
+            .dados {
+                @include titulo(black, 5px, 20px);
+                line-height: 28px;
+                margin-left: 40px;
+                width: 600px;
+
+                #titulo {
+                    @include titulo(brown, 10px, 30px);
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    #main-movie {
+        height: 1200px;
+
+        #display {
+            .content {
+                @include displayFlex(column, center, center);
+
+                .dados {
+                    width: 100%;
+
+
+                    #titulo {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 530px) {
+
+    #main-movie {
+
+        .pesquisa {
+            width: 90%;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+}

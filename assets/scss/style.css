@@ -431,4 +431,87 @@ footer .links {
   padding-top: 30px;
   font-size: 20px;
   padding-bottom: 20px;
+}
+
+/********************Cores das MAIN's********************/
+/********************Cores do FOOTER********************/
+#main-movie {
+  height: 740px;
+}
+#main-movie #titulo-pagina {
+  color: brown;
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#main-movie .pesquisa {
+  width: 500px;
+  display: flex;
+  flex-direction: none;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+#main-movie .pesquisa input,
+#main-movie .pesquisa button {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+#main-movie .pesquisa input {
+  width: 100%;
+  margin-right: 10px;
+}
+#main-movie #display {
+  display: none;
+}
+#main-movie #display .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  margin-top: 70px;
+}
+#main-movie #display .content .img {
+  margin-left: 10px;
+}
+#main-movie #display .content .dados {
+  color: black;
+  padding-top: 5px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 40px;
+  width: 600px;
+}
+#main-movie #display .content .dados #titulo {
+  color: brown;
+  padding-top: 10px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  #main-movie {
+    height: 1200px;
+  }
+  #main-movie #display .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-movie #display .content .dados {
+    width: 100%;
+  }
+  #main-movie #display .content .dados #titulo {
+    text-align: center;
+  }
+}
+@media (max-width: 530px) {
+  #main-movie .pesquisa {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
