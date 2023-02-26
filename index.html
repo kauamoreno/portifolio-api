@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,36 @@
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <title>Home</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
 </head>
+
 <body>
-    <main id="main-index">  
-        <div id="titulo-index" class="titulo">
-            <h1>Meus trabalhos recentes com APIs: um tour pelo meu portfólio</h1>
+    <main id="main-index">
+        <div class="cabeca-page">
+            <div id="texto-index">
+                <h1>Meus trabalhos recentes com APIs: um tour pelo meu portfólio</h1>
+                <p>Eu criei este site para treinar minhas habilidades de consumo de APIs (Interfaces de Programação de Aplicação). As APIs são ferramentas que permitem a comunicação entre diferentes sistemas, possibilitando o compartilhamento de dados e a realização de tarefas de forma automatizada.</p>
+            </div>
+            <aside>
+                <img width="500px" src="assets/img/index/Virtual reality-amico.png" alt="">
+            </aside>
         </div>
 
 
-        <div class="row-index">
+        <div id="cards">
             <div class="card" id="card-dolar">
                 <a href="dolar.html">
                     <div>
                         <img src="assets/img/index/dolar.jpg" alt="Imagem Ilustrativa" class="imagens-index">
                     </div>
-                    <div>
-                        <center>
-                            <p class="texto-index">
-                                O dólar é a moeda oficial dos EUA, controlado pelo Federal Reserve e é amplamente utilizado como moeda de reserva e meio de troca internacional, cujo valor é determinado pelo mercado de câmbio e é afetado por fatores econômicos, políticos e geopolíticos.
-                            </p>
-                        </center>
+                    <div class="texto-card">
+
+                        <h3>API sobre cotação do dólar:</h3>
+                        <p>
+                            Fornece informações atualizadas sobre o valor do dólar em relação à moeda nacional para
+                            ajudar em transações financeiras e comerciais.
+                        </p>
+
                     </div>
                 </a>
             </div>
@@ -35,14 +45,16 @@
             <div class="card" id="card-cep">
                 <a href="cep.html">
                     <div>
-                        <img src="assets/img/index/casa.avif" alt="Imagem Ilustrativa" class="imagens-index">
+                        <img src="assets/img/index/cep.png" alt="Imagem Ilustrativa" class="imagens-index">
                     </div>
-                    <div>
-                        <center>
-                            <p class="texto-index">
-                                CEP é uma sigla para "Código de Endereçamento Postal" utilizado no Brasil para identificar endereços de forma única, composto por 8 dígitos e é atribuído pela Brasil Correios e Telégrafos. Ele facilita a entrega de correspondências e encomendas e também é usado por outras instituições para identificar a localização de seus clientes.
-                            </p>
-                        </center>
+                    <div class="texto-card">
+
+                        <h3>API de busca de CEP:</h3>
+                        <p>
+                            Encontra informações detalhadas sobre endereços no Brasil por código postal para validação e
+                            preenchimento de endereços em diferentes aplicativos.
+                        </p>
+
                     </div>
                 </a>
             </div>
@@ -52,21 +64,73 @@
                     <div>
                         <img src="assets/img/index/form.png" alt="Imagem Ilustrativa" class="imagens-index">
                     </div>
-                    <div>
-                        <center>
-                            <p class="texto-index">
-                                Com a API interna de envio de dados de formulários, é possível integrar informações de diferentes fontes em um único local, tornando a análise de dados mais fácil e eficiente.                            </p>
-                        </center>
+                    <div class="texto-card">
+
+                        <p>
+                            Com a API interna de envio de dados de formulários, é possível integrar informações de
+                            diferentes fontes em um único local, tornando a análise de dados mais fácil e eficiente.
+                        </p>
+
                     </div>
                 </a>
             </div>
-            
+
+            <div class="card" id="card-dolar">
+                <a href="dolar.html">
+                    <div>
+                        <img src="assets/img/index/dolar.jpg" alt="Imagem Ilustrativa" class="imagens-index">
+                    </div>
+                    <div class="texto-card">
+
+                        <h3>API sobre cotação do dólar:</h3>
+                        <p>
+                            Fornece informações atualizadas sobre o valor do dólar em relação à moeda nacional para
+                            ajudar em transações financeiras e comerciais.
+                        </p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="card" id="card-cep">
+                <a href="cep.html">
+                    <div>
+                        <img src="assets/img/index/casa.avif" alt="Imagem Ilustrativa" class="imagens-index">
+                    </div>
+                    <div class="texto-card">
+
+                        <h3>API de busca de CEP:</h3>
+                        <p>
+                            Encontra informações detalhadas sobre endereços no Brasil por código postal para validação e
+                            preenchimento de endereços em diferentes aplicativos.
+                        </p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="card" id="card-envioFormulario">
+                <a href="envioFormulario.html">
+                    <div>
+                        <img src="assets/img/index/form.png" alt="Imagem Ilustrativa" class="imagens-index">
+                    </div>
+                    <div class="texto-card">
+
+                        <p>
+                            Com a API interna de envio de dados de formulários, é possível integrar informações de
+                            diferentes fontes em um único local, tornando a análise de dados mais fácil e eficiente.
+                        </p>
+
+                    </div>
+                </a>
+            </div>
+
         </div>
     </main>
 
     <footer>
         <div class="espaco">
-            
+
         </div>
         <div class="flex">
             <div>
@@ -91,4 +155,5 @@
     </footer>
 
 </body>
+
 </html>

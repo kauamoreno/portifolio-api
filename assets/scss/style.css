@@ -55,80 +55,102 @@ footer .links {
   align-items: none;
 }
 
-/*
-.card {
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    height: 430px;
-    background-color: rgb(252, 252, 252);
-    border-radius: 10px;
+/********************Cores das MAIN's********************/
+/********************Cores do FOOTER********************/
+#main-index {
+  height: 1000px;
+  height: 100%;
+  margin-bottom: 70px;
+}
+#main-index .cabeca-page {
+  height: 500px;
+  background-image: linear-gradient(180deg, #ff0feb 0, #e719e5 16.67%, #c41ddb 33.33%, #a01ecd 50%, #7c1ebe 66.67%, #581db0 83.33%, #301ca2 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+}
+#main-index .cabeca-page #texto-index {
+  width: 50%;
+}
+#main-index .cabeca-page #texto-index h1 {
+  color: white;
+  padding-top: 30px;
+  font-size: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+#main-index .cabeca-page #texto-index p {
+  color: rgb(201, 201, 201);
+  padding-top: 30px;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+#main-index .cabeca-page aside {
+  z-index: 1000;
+}
+#main-index #cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+#main-index #cards .card {
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 70px;
+  padding: 10px;
+  border-radius: 15px;
+}
+#main-index #cards .card:hover {
+  transition: 150ms;
+  box-shadow: 0px 0px 35px 30px rgba(0, 0, 0, 0.16);
+}
+#main-index #cards .card .imagens-index {
+  height: 300px;
+  width: 300px;
+}
+#main-index #cards .card .texto-card {
+  color: black;
+  padding-top: 0;
+  font-size: 18px;
 }
 
-.card:hover {
-    transition: 150ms;
-    -webkit-box-shadow: 0px 0px 35px 30px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0px 0px 35px 30px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 0px 35px 30px rgba(0, 0, 0, 0.16);
+@media (max-width: 1040px) {
+  #main-index #cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
 }
-
-.imagens-index {
-    width: 450px;
-    height: 300px;
+@media (max-width: 1265px) {
+  #main-index .cabeca-page {
+    height: 400px;
+    padding-left: 10px;
+  }
+  #main-index .cabeca-page img {
+    width: 400px;
+  }
 }
-
-.texto-index {
-    width: 430px;
-    text-align: justify;
-    color: rgb(43, 43, 43);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-.row-index {
+@media (max-width: 954px) {
+  #main-index .cabeca-page #texto-index {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 100px;
+  }
 }
-
-@media(max-width: 1790px) {
-    .row-index {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #main-index {
-        height: 2020px;
-    }
-
-    #card-cep,
-    #card-envioFormulario {
-        margin-top: 70px;
-    }
-
-    .card {
-        height: 460px;
-    }
-
-    .texto-index {
-        font-size: 18px;
-    }
-
-    header,
-    footer {
-        padding: 10px;
-    }
+@media (max-width: 860px) {
+  #main-index .cabeca-page {
+    height: 400px;
+  }
+  #main-index .cabeca-page img {
+    display: none;
+  }
 }
-
-@media(max-width: 900px) {
-    #main-index {
-        height: 2250px;
-    }
+@media (max-width: 720px) {
+  #main-index #cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
 }
-*/
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
 #main-temperatura {
