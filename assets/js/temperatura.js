@@ -21,6 +21,8 @@ function pesquisar() {
         const tempCelsius = response.data.main.temp;
         document.querySelector("#temperatura").innerHTML = `A temperatura atual de ${cidade} é de ${tempCelsius.toFixed(2)} °C`
 
+        console.log(response);
+
     }
 
     //Chamando a função getWeather para iniciar a consulta da API
