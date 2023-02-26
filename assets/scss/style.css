@@ -436,7 +436,7 @@ footer .links {
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
 #main-movie {
-  height: 740px;
+  height: 720px;
 }
 #main-movie #titulo-pagina {
   color: brown;
@@ -493,7 +493,8 @@ footer .links {
 
 @media (max-width: 800px) {
   #main-movie {
-    height: 1200px;
+    height: 100%;
+    padding-bottom: 50px;
   }
   #main-movie #display .content {
     display: flex;
@@ -502,7 +503,7 @@ footer .links {
     align-items: center;
   }
   #main-movie #display .content .dados {
-    width: 100%;
+    width: 90%;
   }
   #main-movie #display .content .dados #titulo {
     text-align: center;

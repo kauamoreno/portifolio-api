@@ -2,7 +2,7 @@
 
 #main-movie {
 
-    height: 740px;
+    height: 720px;
 
     #titulo-pagina {
         @include titulo(brown, 20px, 30px);
@@ -58,15 +58,15 @@
 
 @media(max-width: 800px) {
     #main-movie {
-        height: 1200px;
+        height: 100%;
+        padding-bottom: 50px;
 
         #display {
             .content {
                 @include displayFlex(column, center, center);
 
                 .dados {
-                    width: 100%;
-
+                    width: 90%;
 
                     #titulo {
                         text-align: center;
