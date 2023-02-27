@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <title>Temperatura Consultor</title>
-    
+
     <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 
@@ -23,7 +23,15 @@
             <div class="pesquisa-temp">
                 <input type="text" id="cidade" placeholder="Cidade">
                 <button id="pesquisa" onclick="pesquisar()">Pesquisar</button>
+            </div>
+
+            <div id="painel">
+                <div id="cidateTitulo"></div>
                 <div id="temperatura"></div>
+                <div class="row">
+                    <div id="clima"></div>
+                    <img src="" alt="" id="icon">
+                </div>
             </div>
 
         </div>
@@ -38,7 +46,7 @@
 
     <footer>
         <div class="espaco">
-            
+
         </div>
         <div class="flex">
             <div>

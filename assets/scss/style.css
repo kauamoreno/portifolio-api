@@ -160,12 +160,6 @@ footer .links {
   justify-content: space-around;
   align-items: none;
 }
-#main-temperatura .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
 #main-temperatura .content .txt-temp {
   text-align: center;
   color: rgb(0, 0, 0);
@@ -177,15 +171,38 @@ footer .links {
   flex-direction: column;
   justify-content: none;
   align-items: center;
+  margin-top: 100px;
+}
+#main-temperatura .content .pesquisa-temp input, #main-temperatura .content .pesquisa-temp button {
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 60px;
+  width: 220px;
 }
 #main-temperatura .content .pesquisa-temp #cidade {
-  height: 60px;
-  width: 220px;
+  padding-left: 10px;
 }
 #main-temperatura .content .pesquisa-temp #pesquisa {
-  height: 60px;
-  width: 220px;
   margin-top: 10px;
+}
+#main-temperatura .content #painel {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  margin-top: 70px;
+}
+#main-temperatura .content #painel #cidateTitulo {
+  color: white;
+  padding-top: 0;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+#main-temperatura .content #painel .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
 }
 
 @media (max-width: 1025px) {

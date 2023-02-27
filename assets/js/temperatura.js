@@ -19,7 +19,15 @@ function pesquisar() {
 
         //Resposta em (Celsius e localização)
         const tempCelsius = response.data.main.temp;
-        document.querySelector("#temperatura").innerHTML = `A temperatura atual de ${cidade} é de ${tempCelsius.toFixed(2)} °C`
+
+        const iconCode = response.data.weather[0].icon;
+        const clima = response.data.weather[0].main;
+        const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
+        document.getElementById('icon').src = iconUrl
+
+        document.getElementById('cidateTitulo').innerHTML = cidade
+        document.querySelector("#temperatura").innerHTML = `${tempCelsius.toFixed(2)} °C`
+        document.getElementById('clima').innerHTML = `Clima: ${clima}`;
 
         console.log(response);
 
