@@ -272,11 +272,11 @@ footer .links {
 
 @media (max-width: 1345px) {
   #main-dolar {
-    height: 1250px;
+    height: 900px;
   }
   #main-dolar .row-dolar {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: none;
     align-items: none;
   }
@@ -290,14 +290,15 @@ footer .links {
   }
 }
 @media (max-width: 530px) {
-  #imagem-dolar {
+  #main-dolar .row-dolar #imagem #imagem-dolar {
     width: 100%;
     margin-top: 50px;
+    width: 100%;
   }
-  #informacoesDolar {
+  #main-dolar .row-dolar #informacoesDolar {
     margin-top: 100px;
   }
-  #informacoesDolar .inf {
+  #main-dolar .row-dolar #informacoesDolar .inf {
     width: 100%;
   }
 }

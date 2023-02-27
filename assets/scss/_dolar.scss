@@ -41,10 +41,10 @@
 @media(max-width: 1345px) {
 
     #main-dolar {
-        height: 1250px;
+        height: 900px;
 
         .row-dolar {
-            @include displayFlex(column, none, none);
+            @include displayFlex(column-reverse, none, none);
 
             #imagem {
 
@@ -63,16 +63,26 @@
 }
 
 @media(max-width: 530px) {
-    #imagem-dolar {
-        width: 100%;
-        margin-top: 50px;
-    }
 
-    #informacoesDolar {
-        margin-top: 100px;
+    #main-dolar{
 
-        .inf {
-            width: 100%;
+        .row-dolar{
+
+            #imagem{
+                #imagem-dolar {
+                    width: 100%;
+                    margin-top: 50px;
+                    width: 100%;
+                }
+            }
+        
+            #informacoesDolar {
+                margin-top: 100px;
+        
+                .inf {
+                    width: 100%;
+                }
+            }
         }
     }
 }
