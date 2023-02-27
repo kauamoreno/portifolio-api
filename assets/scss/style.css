@@ -455,7 +455,7 @@ footer .links {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  box-shadow: 0px 0px 35px 30px rgba(0, 0, 0, 0.16);
+  box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
   display: none;
 }
 #main-jsonInterno .tela #dados .dados-interior {

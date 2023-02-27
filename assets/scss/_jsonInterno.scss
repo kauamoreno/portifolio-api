@@ -41,7 +41,9 @@
             width: 90%;
             margin: 0 auto;
             display: flex;
-            @include boxShadow();
+            -webkit-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
+            box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
             display: none;
 
             .dados-interior {
