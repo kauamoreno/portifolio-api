@@ -1,6 +1,7 @@
-1. O height esta pequeno, fazendo com que tenha uma borda entre o footer e o fundo,
-tente usar o height: 90% ou 100%.
+1. Estilizar os input do CEP
 
-2. No temperatura.html não aparece o icon
+2. Estilizar o MOVIE
 
-3. A api de Filmes não funciona
+3. Estilizar o Users
+
+4. Estilizar o Ecommerce

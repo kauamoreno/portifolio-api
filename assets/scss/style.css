@@ -58,11 +58,13 @@ footer .flex {
   flex-direction: none;
   justify-content: center;
   align-items: center;
+  background: url(../img/background-pontos.png), rgb(199, 199, 199);
 }
 footer .espaco {
   width: 100%;
   height: 50px;
   background-color: rgb(189, 189, 189);
+  background: url(../img/background-pontos.png), rgb(41, 41, 41);
 }
 footer .redes-sociais,
 footer .links {
