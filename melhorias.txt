@@ -1,0 +1,6 @@
+1. O height esta pequeno, fazendo com que tenha uma borda entre o footer e o fundo,
+tente usar o height: 90% ou 100%.
+
+2. No temperatura.html não aparece o icon
+
+3. A api de Filmes não funciona
