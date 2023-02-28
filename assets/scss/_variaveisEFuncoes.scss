@@ -1,14 +1,6 @@
-/********************Cores das MAIN's********************/
-$corIndex: linear-gradient(180deg, #ff0feb 0, #e719e5 16.67%, #c41ddb 33.33%, #a01ecd 50%, #7c1ebe 66.67%, #581db0 83.33%, #301ca2 100%);
-$corDolar: linear-gradient(180deg, #b2f34f 0, #95ed59 12.5%, #76e561 25%, #52da69 37.5%, #1ecd6f 50%, #00c074 62.5%, #00b479 75%, #00aa7e 87.5%, #00a184 100%);
-$corCep: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
-$corTemperatura: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
-$corJsonInterno: #e0e0e0;
-$corEcommerce: rgb(54, 53, 53);
 
-/********************Cores do FOOTER********************/
-$footerPrimaryColor: rgb(226, 226, 226);
-$footerSecondColor: rgb(189, 189, 189);
+
+
 
 @mixin displayFlex($flexDirection, $justifyContent, $alignItens){
     display: flex;

@@ -2,9 +2,10 @@
 
 $inputLarg: 220px;
 $inputAlt: 60px;
+$corTemperatura: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
 
 #body-temperatura{
-    
+
     background-image: $corTemperatura;
 
     #main-temperatura {

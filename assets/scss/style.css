@@ -5,10 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
 /* SERVE PARA MANTER O FOOTER SEMPRE EMBAIXO */
 html {
   height: 100%;
@@ -26,6 +22,7 @@ footer {
 }
 
 /*********************************************/
+/********************Cores do FOOTER********************/
 footer {
   width: 100%;
   height: 150px;
@@ -52,7 +49,6 @@ footer div {
 }
 footer .flex {
   width: 100%;
-  background-color: rgb(226, 226, 226);
   padding: 20px 0;
   display: flex;
   flex-direction: none;
@@ -63,7 +59,7 @@ footer .flex {
 footer .espaco {
   width: 100%;
   height: 50px;
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(41, 41, 41);
   background: url(../img/background-pontos.png), rgb(41, 41, 41);
 }
 footer .redes-sociais,
@@ -74,8 +70,6 @@ footer .links {
   align-items: none;
 }
 
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
 #main-index {
   height: 1000px;
   height: 100%;
@@ -170,8 +164,6 @@ footer .links {
     grid-template-rows: auto auto auto auto auto auto;
   }
 }
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
 #body-temperatura {
   background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
 }
@@ -246,8 +238,6 @@ footer .links {
   }
 }
 
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
 #body-dolar {
   background-image: linear-gradient(180deg, #b2f34f 0, #95ed59 12.5%, #76e561 25%, #52da69 37.5%, #1ecd6f 50%, #00c074 62.5%, #00b479 75%, #00aa7e 87.5%, #00a184 100%);
 }
@@ -323,8 +313,6 @@ footer .links {
   }
 }
 
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
 #body-cep {
   background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
 }
@@ -388,8 +376,6 @@ footer .links {
   width: 50%;
 }
 
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
 #body-ecommerce {
   background-color: rgb(54, 53, 53);
 }
@@ -432,8 +418,6 @@ footer .links {
   }
 }
 
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
 #body-jsonInterno {
   background-color: #e0e0e0;
 }
@@ -500,8 +484,6 @@ footer .links {
   padding-bottom: 20px;
 }
 
-/********************Cores das MAIN's********************/
-/********************Cores do FOOTER********************/
 #body-movie #main-movie {
   height: 720px;
 }

@@ -1,5 +1,7 @@
 @import './variaveisEFuncoes';
 
+$corDolar: linear-gradient(180deg, #b2f34f 0, #95ed59 12.5%, #76e561 25%, #52da69 37.5%, #1ecd6f 50%, #00c074 62.5%, #00b479 75%, #00aa7e 87.5%, #00a184 100%);
+
 #body-dolar{
     background-image: $corDolar;
 
