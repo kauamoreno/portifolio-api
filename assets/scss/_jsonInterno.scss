@@ -1,62 +1,66 @@
 @import './variaveisEFuncoes';
 
-#main-jsonInterno {
-
-    @include displayFlex(none, center, none);
-    height: 650px;
+#body-jsonInterno{
     background-color: $corJsonInterno;
 
-    .tela {
-        margin-top: 20px;
+    #main-jsonInterno {
 
-        input,
-        button {
-            padding: 10px;
-            border: 1px solid black;
-        }
-
-        button {
-            border-radius: 5px;
-            background-color: rgba(251, 255, 12, 0.8);
-        }
-
-        button:hover {
-            transition: 50ms;
-            background-color: rgba(251, 255, 12, 0.5);
-        }
-
-        .titulo {
-            @include displayFlex(none, center, center);
-            @include titulo(white, 30px, 30px);
-            text-align: center;
-        }
-
-        .areaInput {
-            @include displayFlex(none, space-around, none);
-            margin-top: 50px;
-        }
-
-        #dados {
-            background-color: rgba(251, 255, 12, 0.7);
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
-            -webkit-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
-            box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
-            display: none;
-
-            .dados-interior {
-                padding: 5px 5px 5px 5px;
-                margin-top: 100px;
-
-                .titulo {
-                    @include displayFlex(none, center, center);
-                    @include titulo(white, 30px, 20px);
-                    padding-bottom: 20px;
-                    // text-align: center;
+        @include displayFlex(none, center, none);
+        height: 650px;
+    
+        .tela {
+            margin-top: 20px;
+    
+            input,
+            button {
+                padding: 10px;
+                border: 1px solid black;
+            }
+    
+            button {
+                border-radius: 5px;
+                background-color: rgba(251, 255, 12, 0.8);
+            }
+    
+            button:hover {
+                transition: 50ms;
+                background-color: rgba(251, 255, 12, 0.5);
+            }
+    
+            .titulo {
+                @include displayFlex(none, center, center);
+                @include titulo(white, 30px, 30px);
+                text-align: center;
+            }
+    
+            .areaInput {
+                @include displayFlex(none, space-around, none);
+                margin-top: 50px;
+            }
+    
+            #dados {
+                background-color: rgba(251, 255, 12, 0.7);
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                -webkit-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
+                box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
+                display: none;
+    
+                .dados-interior {
+                    padding: 5px 5px 5px 5px;
+                    margin-top: 100px;
+    
+                    .titulo {
+                        @include displayFlex(none, center, center);
+                        @include titulo(white, 30px, 20px);
+                        padding-bottom: 20px;
+                        // text-align: center;
+                    }
                 }
             }
         }
     }
 }
+

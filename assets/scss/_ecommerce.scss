@@ -1,34 +1,37 @@
 @import './variaveisEFuncoes';
 
-#main-ecommerce {
-    @include displayFlex(column, center, none);
+#body-ecommerce{
     background-color: $corEcommerce;
-    height: 690px;
 
-    .titulo {
-        @include titulo(rgb(224, 224, 224), 20px, 30px);
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .inf {
-        @include titulo(rgb(224, 224, 224), 20px, 25px);
-        @include displayFlex(row, space-around, none);
-    }
-}
-
-@media(max-width: 1080px) {
-    #main-ecommerce{
-
-        height: 1800px;
-
+    #main-ecommerce {
+        @include displayFlex(column, center, none);
+        height: 690px;
+    
         .titulo {
-            margin-top: 10px
+            @include titulo(rgb(224, 224, 224), 20px, 30px);
+            text-align: center;
+            margin-bottom: 50px;
         }
-
+    
         .inf {
-            @include displayFlex(column, space-around, center);
-            height: 100%;
+            @include titulo(rgb(224, 224, 224), 20px, 25px);
+            @include displayFlex(row, space-around, none);
         }
     }
+    
+    @media(max-width: 1080px) {
+        #main-ecommerce{
+    
+            height: 1800px;
+    
+            .titulo {
+                margin-top: 10px
+            }
+    
+            .inf {
+                @include displayFlex(column, space-around, center);
+                height: 100%;
+            }
+        }
+    }    
 }

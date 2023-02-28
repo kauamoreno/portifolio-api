@@ -9,6 +9,23 @@
 /********************Cores do FOOTER********************/
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
+/* SERVE PARA MANTER O FOOTER SEMPRE EMBAIXO */
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/*********************************************/
 footer {
   width: 100%;
   height: 150px;
@@ -153,84 +170,86 @@ footer .links {
 }
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
-#main-temperatura {
+#body-temperatura {
   background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
+}
+#body-temperatura #main-temperatura {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: none;
 }
-#main-temperatura .content .txt-temp {
+#body-temperatura #main-temperatura .content .txt-temp {
   text-align: center;
   color: rgb(0, 0, 0);
   padding-top: 30px;
   font-size: 20px;
 }
-#main-temperatura .content .pesquisa-temp {
+#body-temperatura #main-temperatura .content .pesquisa-temp {
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: center;
   margin-top: 100px;
 }
-#main-temperatura .content .pesquisa-temp input, #main-temperatura .content .pesquisa-temp button {
+#body-temperatura #main-temperatura .content .pesquisa-temp input, #body-temperatura #main-temperatura .content .pesquisa-temp button {
   border: 1px solid black;
   border-radius: 15px;
   height: 60px;
   width: 220px;
 }
-#main-temperatura .content .pesquisa-temp #cidade {
+#body-temperatura #main-temperatura .content .pesquisa-temp #cidade {
   padding-left: 10px;
 }
-#main-temperatura .content .pesquisa-temp #pesquisa {
+#body-temperatura #main-temperatura .content .pesquisa-temp #pesquisa {
   margin-top: 10px;
 }
-#main-temperatura .content #painel {
+#body-temperatura #main-temperatura .content #painel {
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: center;
   margin-top: 70px;
 }
-#main-temperatura .content #painel #cidateTitulo {
+#body-temperatura #main-temperatura .content #painel #cidateTitulo {
   color: white;
   padding-top: 0;
   font-size: 40px;
   margin-bottom: 10px;
 }
-#main-temperatura .content #painel .row {
+#body-temperatura #main-temperatura .content #painel .row {
   display: flex;
   flex-direction: row;
   justify-content: none;
   align-items: center;
 }
-
 @media (max-width: 1025px) {
-  #main-temperatura {
+  #body-temperatura #main-temperatura {
     height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: none;
   }
-  #main-temperatura .img-temperatura img {
+  #body-temperatura #main-temperatura .img-temperatura img {
     width: 80%;
   }
 }
 @media (max-width: 800px) {
-  #main-temperatura {
+  #body-temperatura #main-temperatura {
     height: 900px;
   }
-  #main-temperatura .img-temperatura img {
+  #body-temperatura #main-temperatura .img-temperatura img {
     width: 100%;
   }
 }
+
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
-#main-dolar {
+#body-dolar {
   background-image: linear-gradient(180deg, #b2f34f 0, #95ed59 12.5%, #76e561 25%, #52da69 37.5%, #1ecd6f 50%, #00c074 62.5%, #00b479 75%, #00aa7e 87.5%, #00a184 100%);
 }
-#main-dolar #titulo-dolar {
+#body-dolar #main-dolar #titulo-dolar {
   margin-bottom: 50px;
   color: white;
   padding-top: 20px;
@@ -240,19 +259,19 @@ footer .links {
   justify-content: center;
   align-items: none;
 }
-#main-dolar .row-dolar {
+#body-dolar #main-dolar .row-dolar {
   display: flex;
   flex-direction: row;
   justify-content: none;
   align-items: none;
 }
-#main-dolar .row-dolar #imagem #imagem-dolar {
+#body-dolar #main-dolar .row-dolar #imagem #imagem-dolar {
   margin-left: 10px;
   height: 500px;
   width: 500px;
   margin-top: 10px;
 }
-#main-dolar .row-dolar #informacoesDolar {
+#body-dolar #main-dolar .row-dolar #informacoesDolar {
   width: 100%;
   color: white;
   display: flex;
@@ -260,7 +279,7 @@ footer .links {
   justify-content: space-around;
   align-items: center;
 }
-#main-dolar .row-dolar #informacoesDolar .inf {
+#body-dolar #main-dolar .row-dolar #informacoesDolar .inf {
   width: 70%;
   font-size: 30px;
   color: white;
@@ -269,56 +288,58 @@ footer .links {
   justify-content: space-around;
   align-items: center;
 }
-
 @media (max-width: 1345px) {
-  #main-dolar {
+  #body-dolar #main-dolar {
     height: 900px;
   }
-  #main-dolar .row-dolar {
+  #body-dolar #main-dolar .row-dolar {
     display: flex;
     flex-direction: column-reverse;
     justify-content: none;
     align-items: none;
   }
-  #main-dolar .row-dolar #imagem #imagem-dolar {
+  #body-dolar #main-dolar .row-dolar #imagem #imagem-dolar {
     margin: 0 auto;
     display: flex;
     margin-top: 30px;
   }
-  #main-dolar .row-dolar #informacoesDolar {
+  #body-dolar #main-dolar .row-dolar #informacoesDolar {
     margin-top: 120px;
   }
 }
 @media (max-width: 530px) {
-  #main-dolar .row-dolar #imagem #imagem-dolar {
+  #body-dolar #main-dolar .row-dolar #imagem #imagem-dolar {
     width: 100%;
     margin-top: 50px;
     width: 100%;
   }
-  #main-dolar .row-dolar #informacoesDolar {
+  #body-dolar #main-dolar .row-dolar #informacoesDolar {
     margin-top: 100px;
   }
-  #main-dolar .row-dolar #informacoesDolar .inf {
+  #body-dolar #main-dolar .row-dolar #informacoesDolar .inf {
     width: 100%;
   }
 }
+
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
-#main-cep {
+#body-cep {
+  background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
+}
+#body-cep #main-cep {
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: none;
   height: 700px;
-  background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
 }
-#main-cep .principal {
+#body-cep #main-cep .principal {
   display: flex;
   flex-direction: column;
   justify-content: none;
   align-items: none;
 }
-#main-cep .principal #titulo-cep {
+#body-cep #main-cep .principal #titulo-cep {
   margin-bottom: 50px;
   display: flex;
   flex-direction: none;
@@ -328,25 +349,25 @@ footer .links {
   padding-top: 40px;
   font-size: 30px;
 }
-#main-cep .input-cep {
+#body-cep #main-cep .input-cep {
   display: flex;
   flex-direction: none;
   justify-content: space-around;
   align-items: none;
 }
-#main-cep .input-cep input {
+#body-cep #main-cep .input-cep input {
   width: 40%;
 }
-#main-cep input,
-#main-cep button {
+#body-cep #main-cep input,
+#body-cep #main-cep button {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #000;
 }
-#main-cep .info {
+#body-cep #main-cep .info {
   display: none;
 }
-#main-cep .info .informacao {
+#body-cep #main-cep .info .informacao {
   margin-top: 20px;
   padding: 20px;
   display: flex;
@@ -354,35 +375,37 @@ footer .links {
   justify-content: none;
   align-items: none;
 }
-#main-cep .info .informacao div {
+#body-cep #main-cep .info .informacao div {
   display: flex;
   flex-direction: none;
   justify-content: center;
   align-items: center;
 }
-#main-cep .info .informacao div input {
+#body-cep #main-cep .info .informacao div input {
   margin: 10px 0 10px 0;
   width: 50%;
 }
 
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
-#main-ecommerce {
+#body-ecommerce {
+  background-color: rgb(54, 53, 53);
+}
+#body-ecommerce #main-ecommerce {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: none;
-  background-color: rgb(54, 53, 53);
   height: 690px;
 }
-#main-ecommerce .titulo {
+#body-ecommerce #main-ecommerce .titulo {
   color: rgb(224, 224, 224);
   padding-top: 20px;
   font-size: 30px;
   text-align: center;
   margin-bottom: 50px;
 }
-#main-ecommerce .inf {
+#body-ecommerce #main-ecommerce .inf {
   color: rgb(224, 224, 224);
   padding-top: 20px;
   font-size: 25px;
@@ -391,15 +414,14 @@ footer .links {
   justify-content: space-around;
   align-items: none;
 }
-
 @media (max-width: 1080px) {
-  #main-ecommerce {
+  #body-ecommerce #main-ecommerce {
     height: 1800px;
   }
-  #main-ecommerce .titulo {
+  #body-ecommerce #main-ecommerce .titulo {
     margin-top: 10px;
   }
-  #main-ecommerce .inf {
+  #body-ecommerce #main-ecommerce .inf {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -407,33 +429,36 @@ footer .links {
     height: 100%;
   }
 }
+
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
-#main-jsonInterno {
+#body-jsonInterno {
+  background-color: #e0e0e0;
+}
+#body-jsonInterno #main-jsonInterno {
   display: flex;
   flex-direction: none;
   justify-content: center;
   align-items: none;
   height: 650px;
-  background-color: #e0e0e0;
 }
-#main-jsonInterno .tela {
+#body-jsonInterno #main-jsonInterno .tela {
   margin-top: 20px;
 }
-#main-jsonInterno .tela input,
-#main-jsonInterno .tela button {
+#body-jsonInterno #main-jsonInterno .tela input,
+#body-jsonInterno #main-jsonInterno .tela button {
   padding: 10px;
   border: 1px solid black;
 }
-#main-jsonInterno .tela button {
+#body-jsonInterno #main-jsonInterno .tela button {
   border-radius: 5px;
   background-color: rgba(251, 255, 12, 0.8);
 }
-#main-jsonInterno .tela button:hover {
+#body-jsonInterno #main-jsonInterno .tela button:hover {
   transition: 50ms;
   background-color: rgba(251, 255, 12, 0.5);
 }
-#main-jsonInterno .tela .titulo {
+#body-jsonInterno #main-jsonInterno .tela .titulo {
   display: flex;
   flex-direction: none;
   justify-content: center;
@@ -443,14 +468,14 @@ footer .links {
   font-size: 30px;
   text-align: center;
 }
-#main-jsonInterno .tela .areaInput {
+#body-jsonInterno #main-jsonInterno .tela .areaInput {
   display: flex;
   flex-direction: none;
   justify-content: space-around;
   align-items: none;
   margin-top: 50px;
 }
-#main-jsonInterno .tela #dados {
+#body-jsonInterno #main-jsonInterno .tela #dados {
   background-color: rgba(251, 255, 12, 0.7);
   width: 90%;
   margin: 0 auto;
@@ -458,11 +483,11 @@ footer .links {
   box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
   display: none;
 }
-#main-jsonInterno .tela #dados .dados-interior {
+#body-jsonInterno #main-jsonInterno .tela #dados .dados-interior {
   padding: 5px 5px 5px 5px;
   margin-top: 100px;
 }
-#main-jsonInterno .tela #dados .dados-interior .titulo {
+#body-jsonInterno #main-jsonInterno .tela #dados .dados-interior .titulo {
   display: flex;
   flex-direction: none;
   justify-content: center;
@@ -475,17 +500,17 @@ footer .links {
 
 /********************Cores das MAIN's********************/
 /********************Cores do FOOTER********************/
-#main-movie {
+#body-movie #main-movie {
   height: 720px;
 }
-#main-movie #titulo-pagina {
+#body-movie #main-movie #titulo-pagina {
   color: brown;
   padding-top: 20px;
   font-size: 30px;
   text-align: center;
   margin-bottom: 40px;
 }
-#main-movie .pesquisa {
+#body-movie #main-movie .pesquisa {
   width: 500px;
   display: flex;
   flex-direction: none;
@@ -493,30 +518,30 @@ footer .links {
   align-items: center;
   margin: 0 auto;
 }
-#main-movie .pesquisa input,
-#main-movie .pesquisa button {
+#body-movie #main-movie .pesquisa input,
+#body-movie #main-movie .pesquisa button {
   padding: 10px;
   border-radius: 7px;
   border: 1px solid black;
 }
-#main-movie .pesquisa input {
+#body-movie #main-movie .pesquisa input {
   width: 100%;
   margin-right: 10px;
 }
-#main-movie #display {
+#body-movie #main-movie #display {
   display: none;
 }
-#main-movie #display .content {
+#body-movie #main-movie #display .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: none;
   margin-top: 70px;
 }
-#main-movie #display .content .img {
+#body-movie #main-movie #display .content .img {
   margin-left: 10px;
 }
-#main-movie #display .content .dados {
+#body-movie #main-movie #display .content .dados {
   color: black;
   padding-top: 5px;
   font-size: 20px;
@@ -524,33 +549,32 @@ footer .links {
   margin-left: 40px;
   width: 600px;
 }
-#main-movie #display .content .dados #titulo {
+#body-movie #main-movie #display .content .dados #titulo {
   color: brown;
   padding-top: 10px;
   font-size: 30px;
   margin-bottom: 20px;
 }
-
 @media (max-width: 800px) {
-  #main-movie {
+  #body-movie #main-movie {
     height: 100%;
     padding-bottom: 50px;
   }
-  #main-movie #display .content {
+  #body-movie #main-movie #display .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #main-movie #display .content .dados {
+  #body-movie #main-movie #display .content .dados {
     width: 90%;
   }
-  #main-movie #display .content .dados #titulo {
+  #body-movie #main-movie #display .content .dados #titulo {
     text-align: center;
   }
 }
 @media (max-width: 530px) {
-  #main-movie .pesquisa {
+  #body-movie #main-movie .pesquisa {
     width: 90%;
     display: flex;
     margin: 0 auto;

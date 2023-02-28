@@ -3,77 +3,81 @@
 $inputLarg: 220px;
 $inputAlt: 60px;
 
-
-#main-temperatura {
+#body-temperatura{
+    
     background-image: $corTemperatura;
-    @include displayFlex(row, space-around, none);
 
-    .content {
-        // @include displayFlex(column, space-around, center);
-
-        .txt-temp {
-            text-align: center;
-            @include titulo(rgb(0, 0, 0), 30px, 20px);
-        }
-
-        .pesquisa-temp {
-            @include displayFlex(column, none, center);
-            margin-top: 100px;
-
-            input, button{
-                border: 1px solid black;
-                border-radius: 15px;
-                height: $inputAlt;
-                width: $inputLarg;
-            }
-
-            #cidade {
-                padding-left: 10px;
-            }
-
-            #pesquisa {
-                margin-top: 10px;
-            }
-        }
-
-        #painel{
-            @include displayFlex(column, none, center);
-            margin-top: 70px;
-
-            #cidateTitulo{
-                @include titulo(white, 0, 40px);
-                margin-bottom: 10px
-            }
-
-            .row{
-                @include displayFlex(row, none, center);
-            }
-        }
-    }
-}
-
-@media(max-width: 1025px) {
     #main-temperatura {
-        height: 1000px;
-        @include displayFlex(column, center, none);
-
-        .img-temperatura {
-            img {
-                width: 80%;
-
+        @include displayFlex(row, space-around, none);
+    
+        .content {
+            // @include displayFlex(column, space-around, center);
+    
+            .txt-temp {
+                text-align: center;
+                @include titulo(rgb(0, 0, 0), 30px, 20px);
+            }
+    
+            .pesquisa-temp {
+                @include displayFlex(column, none, center);
+                margin-top: 100px;
+    
+                input, button{
+                    border: 1px solid black;
+                    border-radius: 15px;
+                    height: $inputAlt;
+                    width: $inputLarg;
+                }
+    
+                #cidade {
+                    padding-left: 10px;
+                }
+    
+                #pesquisa {
+                    margin-top: 10px;
+                }
+            }
+    
+            #painel{
+                @include displayFlex(column, none, center);
+                margin-top: 70px;
+    
+                #cidateTitulo{
+                    @include titulo(white, 0, 40px);
+                    margin-bottom: 10px
+                }
+    
+                .row{
+                    @include displayFlex(row, none, center);
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 1025px) {
+        #main-temperatura {
+            height: 1000px;
+            @include displayFlex(column, center, none);
+    
+            .img-temperatura {
+                img {
+                    width: 80%;
+    
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 800px) {
+        #main-temperatura {
+            height: 900px;
+    
+            .img-temperatura {
+                img {
+                    width: 100%;
+                }
             }
         }
     }
 }
 
-@media(max-width: 800px) {
-    #main-temperatura {
-        height: 900px;
-
-        .img-temperatura {
-            img {
-                width: 100%;
-            }
-        }
-    }
-}

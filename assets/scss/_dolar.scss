@@ -1,88 +1,91 @@
 @import './variaveisEFuncoes';
 
-#main-dolar {
-
+#body-dolar{
     background-image: $corDolar;
 
-    #titulo-dolar {
-        margin-bottom: 50px;
-        @include titulo(white, 20px, 40px);
-        @include displayFlex(none, center, none)
-    }
+    #main-dolar {
 
-    .row-dolar {
-        @include displayFlex(row, none, none);
-
-        #imagem {
-
-            #imagem-dolar {
-                margin-left: 10px;
-                height: 500px;
-                width: 500px;
-                margin-top: 10px;
-            }
+        #titulo-dolar {
+            margin-bottom: 50px;
+            @include titulo(white, 20px, 40px);
+            @include displayFlex(none, center, none)
         }
-
-        #informacoesDolar {
-            width: 100%;
-            color: white;
-            @include displayFlex(row, space-around, center);
-
-            .inf {
-                width: 70%;
-                font-size: 30px;
+    
+        .row-dolar {
+            @include displayFlex(row, none, none);
+    
+            #imagem {
+    
+                #imagem-dolar {
+                    margin-left: 10px;
+                    height: 500px;
+                    width: 500px;
+                    margin-top: 10px;
+                }
+            }
+    
+            #informacoesDolar {
+                width: 100%;
                 color: white;
                 @include displayFlex(row, space-around, center);
-            }
-        }
-    }
-}
-
-@media(max-width: 1345px) {
-
-    #main-dolar {
-        height: 900px;
-
-        .row-dolar {
-            @include displayFlex(column-reverse, none, none);
-
-            #imagem {
-
-                #imagem-dolar {
-                    margin: 0 auto;
-                    display: flex;
-                    margin-top: 30px;
-                }
-            }
-
-            #informacoesDolar {
-                margin-top: 120px;
-            }
-        }
-    }
-}
-
-@media(max-width: 530px) {
-
-    #main-dolar{
-
-        .row-dolar{
-
-            #imagem{
-                #imagem-dolar {
-                    width: 100%;
-                    margin-top: 50px;
-                    width: 100%;
-                }
-            }
-        
-            #informacoesDolar {
-                margin-top: 100px;
-        
+    
                 .inf {
-                    width: 100%;
+                    width: 70%;
+                    font-size: 30px;
+                    color: white;
+                    @include displayFlex(row, space-around, center);
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 1345px) {
+    
+        #main-dolar {
+            height: 900px;
+    
+            .row-dolar {
+                @include displayFlex(column-reverse, none, none);
+    
+                #imagem {
+    
+                    #imagem-dolar {
+                        margin: 0 auto;
+                        display: flex;
+                        margin-top: 30px;
+                    }
+                }
+    
+                #informacoesDolar {
+                    margin-top: 120px;
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 530px) {
+    
+        #main-dolar{
+    
+            .row-dolar{
+    
+                #imagem{
+                    #imagem-dolar {
+                        width: 100%;
+                        margin-top: 50px;
+                        width: 100%;
+                    }
+                }
+            
+                #informacoesDolar {
+                    margin-top: 100px;
+            
+                    .inf {
+                        width: 100%;
+                    }
                 }
             }
         }
     }
 }
+

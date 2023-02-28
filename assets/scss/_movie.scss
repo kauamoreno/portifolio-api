@@ -1,90 +1,94 @@
 @import './variaveisEFuncoes';
 
-#main-movie {
+#body-movie{
+    // background-color: aqua;
 
-    height: 720px;
-
-    #titulo-pagina {
-        @include titulo(brown, 20px, 30px);
-        text-align: center;
-        margin-bottom: 40px;
-
-    }
-
-    .pesquisa {
-        width: 500px;
-        @include displayFlex(none, space-around, center);
-        margin: 0 auto;
-
-        input,
-        button {
-            padding: 10px;
-            border-radius: 7px;
-            border: 1px solid black;
-        }
-
-        input {
-            width: 100%;
-            margin-right: 10px;
-        }
-
-    }
-
-    #display {
-        display: none;
-
-        .content {
-            @include displayFlex(row, center, none);
-            margin-top: 70px;
-
-            .img {
-                margin-left: 10px;
-            }
-
-            .dados {
-                @include titulo(black, 5px, 20px);
-                line-height: 28px;
-                margin-left: 40px;
-                width: 600px;
-
-                #titulo {
-                    @include titulo(brown, 10px, 30px);
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
-}
-
-@media(max-width: 800px) {
     #main-movie {
-        height: 100%;
-        padding-bottom: 50px;
 
+        height: 720px;
+    
+        #titulo-pagina {
+            @include titulo(brown, 20px, 30px);
+            text-align: center;
+            margin-bottom: 40px;
+    
+        }
+    
+        .pesquisa {
+            width: 500px;
+            @include displayFlex(none, space-around, center);
+            margin: 0 auto;
+    
+            input,
+            button {
+                padding: 10px;
+                border-radius: 7px;
+                border: 1px solid black;
+            }
+    
+            input {
+                width: 100%;
+                margin-right: 10px;
+            }
+    
+        }
+    
         #display {
+            display: none;
+    
             .content {
-                @include displayFlex(column, center, center);
-
+                @include displayFlex(row, center, none);
+                margin-top: 70px;
+    
+                .img {
+                    margin-left: 10px;
+                }
+    
                 .dados {
-                    width: 90%;
-
+                    @include titulo(black, 5px, 20px);
+                    line-height: 28px;
+                    margin-left: 40px;
+                    width: 600px;
+    
                     #titulo {
-                        text-align: center;
+                        @include titulo(brown, 10px, 30px);
+                        margin-bottom: 20px;
                     }
                 }
             }
         }
     }
-}
-
-@media(max-width: 530px) {
-
-    #main-movie {
-
-        .pesquisa {
-            width: 90%;
-            display: flex;
-            margin: 0 auto;
+    
+    @media(max-width: 800px) {
+        #main-movie {
+            height: 100%;
+            padding-bottom: 50px;
+    
+            #display {
+                .content {
+                    @include displayFlex(column, center, center);
+    
+                    .dados {
+                        width: 90%;
+    
+                        #titulo {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 530px) {
+    
+        #main-movie {
+    
+            .pesquisa {
+                width: 90%;
+                display: flex;
+                margin: 0 auto;
+            }
         }
     }
 }
