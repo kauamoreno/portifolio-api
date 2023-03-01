@@ -34,6 +34,17 @@ $corCep: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75
             border-radius: 5px;
             border: 1px solid #000;
         }
+
+        button{
+            font-size: 17px;
+            background-color: white;
+        }
+
+        button:hover{
+            transition: 400ms;
+            background-color: orange;
+            color: white;
+        }
     
         .info {
             display: none;

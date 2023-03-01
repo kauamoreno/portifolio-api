@@ -1,9 +1,10 @@
 @import './variaveisEFuncoes';
 
-$corEcommerce: rgb(54, 53, 53);
+$corEcommerce: linear-gradient(to bottom, #000000, #434343);
+
 
 #body-ecommerce{
-    background-color: $corEcommerce;
+    background: $corEcommerce;
 
     #main-ecommerce {
         @include displayFlex(column, center, none);

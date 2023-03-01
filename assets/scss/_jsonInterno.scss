@@ -8,7 +8,7 @@ $corJsonInterno: #e0e0e0;
     #main-jsonInterno {
 
         @include displayFlex(none, center, none);
-        height: 650px;
+        height: 780px;
     
         .tela {
             margin-top: 20px;
@@ -25,7 +25,7 @@ $corJsonInterno: #e0e0e0;
             }
     
             button:hover {
-                transition: 50ms;
+                transition: 400ms;
                 background-color: rgba(251, 255, 12, 0.5);
             }
     
@@ -56,9 +56,13 @@ $corJsonInterno: #e0e0e0;
     
                     .titulo {
                         @include displayFlex(none, center, center);
-                        @include titulo(white, 30px, 20px);
+                        @include titulo(rgb(255, 0, 0), 30px, 20px);
                         padding-bottom: 20px;
                         // text-align: center;
+                    }
+
+                    .row{
+                        @include displayFlex(row, space-around, center);
                     }
                 }
             }

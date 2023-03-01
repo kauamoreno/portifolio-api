@@ -1,7 +1,9 @@
 @import './variaveisEFuncoes';
 
+$corMovie: linear-gradient(to right, #c9d6ff, #e2e2e2);
+
 #body-movie{
-    // background-color: aqua;
+    background: $corMovie;
 
     #main-movie {
 
@@ -24,6 +26,13 @@
                 padding: 10px;
                 border-radius: 7px;
                 border: 1px solid black;
+                background-color: white;
+            }
+
+            button:hover{
+                transition: 400ms;
+                background-color: brown;
+                color: #d8d8d8;
             }
     
             input {

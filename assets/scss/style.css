@@ -192,6 +192,15 @@ footer .links {
   height: 60px;
   width: 220px;
 }
+#body-temperatura #main-temperatura .content .pesquisa-temp button {
+  font-size: 17px;
+  background-color: white;
+}
+#body-temperatura #main-temperatura .content .pesquisa-temp button:hover {
+  transition: 400ms;
+  background-color: orange;
+  color: white;
+}
 #body-temperatura #main-temperatura .content .pesquisa-temp #cidade {
   padding-left: 10px;
 }
@@ -219,7 +228,7 @@ footer .links {
 }
 @media (max-width: 1025px) {
   #body-temperatura #main-temperatura {
-    height: 1000px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,11 +236,14 @@ footer .links {
   }
   #body-temperatura #main-temperatura .img-temperatura img {
     width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
   }
 }
 @media (max-width: 800px) {
   #body-temperatura #main-temperatura {
-    height: 900px;
+    height: 1000px;
   }
   #body-temperatura #main-temperatura .img-temperatura img {
     width: 100%;
@@ -354,6 +366,15 @@ footer .links {
   border-radius: 5px;
   border: 1px solid #000;
 }
+#body-cep #main-cep button {
+  font-size: 17px;
+  background-color: white;
+}
+#body-cep #main-cep button:hover {
+  transition: 400ms;
+  background-color: orange;
+  color: white;
+}
 #body-cep #main-cep .info {
   display: none;
 }
@@ -377,7 +398,7 @@ footer .links {
 }
 
 #body-ecommerce {
-  background-color: rgb(54, 53, 53);
+  background: linear-gradient(to bottom, #000000, #434343);
 }
 #body-ecommerce #main-ecommerce {
   display: flex;
@@ -426,7 +447,7 @@ footer .links {
   flex-direction: none;
   justify-content: center;
   align-items: none;
-  height: 650px;
+  height: 780px;
 }
 #body-jsonInterno #main-jsonInterno .tela {
   margin-top: 20px;
@@ -441,7 +462,7 @@ footer .links {
   background-color: rgba(251, 255, 12, 0.8);
 }
 #body-jsonInterno #main-jsonInterno .tela button:hover {
-  transition: 50ms;
+  transition: 400ms;
   background-color: rgba(251, 255, 12, 0.5);
 }
 #body-jsonInterno #main-jsonInterno .tela .titulo {
@@ -478,12 +499,21 @@ footer .links {
   flex-direction: none;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(255, 0, 0);
   padding-top: 30px;
   font-size: 20px;
   padding-bottom: 20px;
 }
+#body-jsonInterno #main-jsonInterno .tela #dados .dados-interior .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
+#body-movie {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+}
 #body-movie #main-movie {
   height: 720px;
 }
@@ -507,6 +537,12 @@ footer .links {
   padding: 10px;
   border-radius: 7px;
   border: 1px solid black;
+  background-color: white;
+}
+#body-movie #main-movie .pesquisa button:hover {
+  transition: 400ms;
+  background-color: brown;
+  color: #d8d8d8;
 }
 #body-movie #main-movie .pesquisa input {
   width: 100%;

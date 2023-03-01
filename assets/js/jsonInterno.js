@@ -10,7 +10,7 @@ input.addEventListener("keydown", (event) => {
 function pesquisar(){
 
     //MINHA BASE DE DADOS ARRAY
-    const pessoas = '{"pessoa1":{"nome": "101", "idade": "36", "profissao": "Carpinteiro"}, "pessoa2":{"nome": "102", "idade": "47", "profissao": "Programador"},                  "pessoa3":{"nome": "103", "idade": "12", "profissao": "Estudante"}, "pessoa4":{"nome": "104", "idade": "45", "profissao": "Geólogo"},                                           "pessoa5":{"nome": "105", "idade": "90", "profissao": "Aposentado"}, "pessoa6":{"nome": "106", "idade": "51", "profissao": "Cozinheiro"}}'
+    const pessoas = '{"pessoa1":{"nome": "101", "idade": "36", "profissao": "Advogada", "img": "assets/img/jsonInterno/foto1.jpg"}, "pessoa2":{"nome": "102", "idade": "18", "profissao": "Estudante", "img": "assets/img/jsonInterno/foto2.jpg"},                  "pessoa3":{"nome": "103", "idade": "47", "profissao": "Programador", "img": "assets/img/jsonInterno/foto3.jpg"}, "pessoa4":{"nome": "104", "idade": "45", "profissao": "Geólogo", "img": "assets/img/jsonInterno/foto4.jpg"},                                           "pessoa5":{"nome": "105", "idade": "90", "profissao": "Aposentado", "img": "assets/img/jsonInterno/foto5.jpg"}, "pessoa6":{"nome": "106", "idade": "51", "profissao": "Cozinheiro", "img": "assets/img/jsonInterno/foto6.jpg"}}'
 
     //CONVERSÃO DA MINHA BASE DE DADOS ARRAY PARA JSON
     const data = JSON.parse(pessoas)
@@ -34,6 +34,7 @@ function pesquisar(){
             timer: 1500
         })
         document.getElementById("dados").style.display = "block";
+        document.getElementById('imagem').src = data[user].img;
         document.getElementById("nome").innerHTML = `●  CPF: ${data[user].nome}`;
         document.getElementById("idade").innerHTML = `●  Idade: ${data[user].idade}`;
         document.getElementById("profissao").innerHTML = `●  Profissão: ${data[user].profissao}`;
