@@ -1,7 +1,0 @@
-1. Estilizar os input do CEP
-
-2. Estilizar o MOVIE
-
-3. Estilizar o Users
-
-4. Estilizar o Ecommerce
