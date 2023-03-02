@@ -4,7 +4,7 @@ function pesquisa() {
 
     //http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}
 
-    fetch(`http://www.omdbapi.com/?t=${filme}&apikey=${apiKey}`)
+    fetch(`https://www.omdbapi.com/?t=${filme}&apikey=${apiKey}`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
