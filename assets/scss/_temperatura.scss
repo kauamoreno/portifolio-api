@@ -4,72 +4,74 @@ $inputLarg: 220px;
 $inputAlt: 60px;
 $corTemperatura: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
 
-#body-temperatura{
+#body-temperatura {
 
     background-image: $corTemperatura;
 
     #main-temperatura {
         @include displayFlex(row, space-around, none);
-    
+
         .content {
-    
+
             .txt-temp {
                 text-align: center;
                 @include titulo(rgb(0, 0, 0), 30px, 20px);
             }
-    
+
             .pesquisa-temp {
                 @include displayFlex(column, none, center);
                 margin-top: 100px;
-    
-                input, button{
+
+                input,
+                button {
                     border: 1px solid black;
                     border-radius: 15px;
                     height: $inputAlt;
                     width: $inputLarg;
                 }
 
-                button{
+                button {
                     font-size: 17px;
                     background-color: white;
                 }
 
-                button:hover{
+                button:hover {
                     transition: 400ms;
                     background-color: orange;
                     color: white;
                 }
-    
+
                 #cidade {
                     padding-left: 10px;
                 }
-    
+
                 #pesquisa {
                     margin-top: 10px;
                 }
             }
-    
-            #painel{
+
+            #painel {
                 @include displayFlex(column, none, center);
                 margin-top: 70px;
-    
-                #cidateTitulo{
+
+                #cidateTitulo {
                     @include titulo(white, 0, 40px);
                     margin-bottom: 10px
                 }
-    
-                .row{
+
+                .row {
                     @include displayFlex(row, none, center);
                 }
             }
         }
     }
-    
+
     @media(max-width: 1025px) {
         #main-temperatura {
             height: 1200px;
             @include displayFlex(column, center, none);
-    
+            background-image: $corTemperatura;
+
             .img-temperatura {
                 img {
                     width: 80%;
@@ -80,11 +82,11 @@ $corTemperatura: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #a
             }
         }
     }
-    
+
     @media(max-width: 800px) {
         #main-temperatura {
             height: 1000px;
-    
+
             .img-temperatura {
                 img {
                     width: 100%;
@@ -93,4 +95,3 @@ $corTemperatura: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #a
         }
     }
 }
-

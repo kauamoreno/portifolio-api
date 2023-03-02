@@ -45,6 +45,7 @@ $corDolar: linear-gradient(180deg, #b2f34f 0, #95ed59 12.5%, #76e561 25%, #52da6
     
         #main-dolar {
             height: 900px;
+            background-image: $corDolar;
     
             .row-dolar {
                 @include displayFlex(column-reverse, none, none);

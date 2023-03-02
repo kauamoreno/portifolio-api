@@ -198,7 +198,8 @@ footer .links {
   align-items: center;
   margin-top: 100px;
 }
-#body-temperatura #main-temperatura .content .pesquisa-temp input, #body-temperatura #main-temperatura .content .pesquisa-temp button {
+#body-temperatura #main-temperatura .content .pesquisa-temp input,
+#body-temperatura #main-temperatura .content .pesquisa-temp button {
   border: 1px solid black;
   border-radius: 15px;
   height: 60px;
@@ -245,6 +246,7 @@ footer .links {
     flex-direction: column;
     justify-content: center;
     align-items: none;
+    background-image: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75%, #8cb041 100%);
   }
   #body-temperatura #main-temperatura .img-temperatura img {
     width: 80%;
@@ -307,6 +309,7 @@ footer .links {
 @media (max-width: 1345px) {
   #body-dolar #main-dolar {
     height: 900px;
+    background-image: linear-gradient(180deg, #b2f34f 0, #95ed59 12.5%, #76e561 25%, #52da69 37.5%, #1ecd6f 50%, #00c074 62.5%, #00b479 75%, #00aa7e 87.5%, #00a184 100%);
   }
   #body-dolar #main-dolar .row-dolar {
     display: flex;
@@ -449,6 +452,7 @@ footer .links {
 @media (max-width: 1080px) {
   #body-ecommerce #main-ecommerce {
     height: 1800px;
+    background: linear-gradient(to bottom, #000000, #434343);
   }
   #body-ecommerce #main-ecommerce .titulo {
     margin-top: 10px;
