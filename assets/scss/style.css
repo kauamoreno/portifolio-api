@@ -408,6 +408,11 @@ footer .links {
   margin: 10px 0 10px 0;
   width: 50%;
 }
+@media (max-width: 505px) {
+  #body-cep .principal .titulo {
+    text-align: center;
+  }
+}
 
 #body-ecommerce {
   background: linear-gradient(to bottom, #000000, #434343);
@@ -434,6 +439,12 @@ footer .links {
   flex-direction: row;
   justify-content: space-around;
   align-items: none;
+}
+#body-ecommerce #main-ecommerce .inf #imagem-nirvana,
+#body-ecommerce #main-ecommerce .inf #imagem-queen,
+#body-ecommerce #main-ecommerce .inf #imagem-guns {
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 1080px) {
   #body-ecommerce #main-ecommerce {

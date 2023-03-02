@@ -65,5 +65,13 @@ $corCep: linear-gradient(180deg, #ffff5c 0, #fff954 25%, #d5e04d 50%, #aec646 75
             }
         }
     }
+
+    @media(max-width: 505px) {
+        .principal{
+            .titulo{
+                text-align: center;
+            }
+        }
+    }
 }
 

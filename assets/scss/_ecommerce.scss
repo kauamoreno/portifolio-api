@@ -19,6 +19,13 @@ $corEcommerce: linear-gradient(to bottom, #000000, #434343);
         .inf {
             @include titulo(rgb(224, 224, 224), 20px, 25px);
             @include displayFlex(row, space-around, none);
+
+            #imagem-nirvana,
+            #imagem-queen,
+            #imagem-guns{
+                display: flex;
+                justify-content: center;
+            }
         }
     }
     
