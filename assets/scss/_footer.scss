@@ -67,3 +67,12 @@ footer {
     }
 }
 
+@media(max-width: 460px) {
+
+    .flex{
+        div{
+            width: 100%;
+        }
+    }
+}
+
