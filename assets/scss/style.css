@@ -537,6 +537,20 @@ footer .links {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 490px) {
+  #body-jsonInterno #main-jsonInterno {
+    height: 890px;
+  }
+  #body-jsonInterno #main-jsonInterno .tela #dados .dados-interior .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #body-jsonInterno #main-jsonInterno .tela #dados .dados-interior .row .txt {
+    padding-top: 15px;
+  }
+}
 
 #body-movie {
   background: linear-gradient(to right, #c9d6ff, #e2e2e2);

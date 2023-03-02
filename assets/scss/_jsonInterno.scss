@@ -2,44 +2,44 @@
 
 $corJsonInterno: #e0e0e0;
 
-#body-jsonInterno{
+#body-jsonInterno {
     background-color: $corJsonInterno;
 
     #main-jsonInterno {
 
         @include displayFlex(none, center, none);
         height: 780px;
-    
+
         .tela {
             margin-top: 20px;
-    
+
             input,
             button {
                 padding: 10px;
                 border: 1px solid black;
             }
-    
+
             button {
                 border-radius: 5px;
                 background-color: rgba(251, 255, 12, 0.8);
             }
-    
+
             button:hover {
                 transition: 400ms;
                 background-color: rgba(251, 255, 12, 0.5);
             }
-    
+
             .titulo {
                 @include displayFlex(none, center, center);
                 @include titulo(white, 30px, 30px);
                 text-align: center;
             }
-    
+
             .areaInput {
                 @include displayFlex(none, space-around, none);
                 margin-top: 50px;
             }
-    
+
             #dados {
                 background-color: rgba(251, 255, 12, 0.7);
                 width: 90%;
@@ -49,11 +49,11 @@ $corJsonInterno: #e0e0e0;
                 -moz-box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
                 box-shadow: 9px 11px 18px -4px rgba(0, 0, 0, 0.75);
                 display: none;
-    
+
                 .dados-interior {
                     padding: 5px 5px 5px 5px;
                     margin-top: 100px;
-    
+
                     .titulo {
                         @include displayFlex(none, center, center);
                         @include titulo(rgb(255, 0, 0), 30px, 20px);
@@ -61,12 +61,35 @@ $corJsonInterno: #e0e0e0;
                         // text-align: center;
                     }
 
-                    .row{
+                    .row {
                         @include displayFlex(row, space-around, center);
                     }
                 }
             }
         }
-    }
-}
 
+
+    }
+
+    @media(max-width: 490px) {
+
+        #main-jsonInterno {
+            height: 890px;
+
+            .tela {
+                #dados {
+                    .dados-interior {
+                        .row {
+                            @include displayFlex(column, center, center);
+
+                            .txt{
+                                padding-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
