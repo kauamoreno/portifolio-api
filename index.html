@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
     <title>Home</title>
 
@@ -25,7 +26,7 @@
 
 
         <div id="cards">
-            <div class="card" id="card-dolar">
+            <div class="card" id="card-dolar" data-aos="fade-right">
                 <a href="dolar.html">
                     <div>
                         <img src="assets/img/index/dolar.jpg" alt="Imagem Ilustrativa" class="imagens-index">
@@ -42,7 +43,7 @@
                 </a>
             </div>
 
-            <div class="card" id="card-cep">
+            <div class="card" id="card-cep" data-aos="fade-right">
                 <a href="cep.html">
                     <div>
                         <img src="assets/img/index/cep.png" alt="Imagem Ilustrativa" class="imagens-index">
@@ -59,7 +60,7 @@
                 </a>
             </div>
 
-            <div class="card" id="card-movie">
+            <div class="card" id="card-movie" data-aos="fade-right">
                 <a href="movie.html">
                     <div>
                         <img src="assets/img/index/movie.png" alt="Imagem Ilustrativa" class="imagens-index">
@@ -67,14 +68,15 @@
                     <div class="texto-card">
                         <h3>API de Filmes:</h3><br>
                         <p>
-                            Permite pesquisar informações detalhadas sobre filmes específicos, incluindo título, gênero e sinopse.
+                            Permite pesquisar informações detalhadas sobre filmes específicos, incluindo título, gênero
+                            e sinopse.
                         </p>
 
                     </div>
                 </a>
             </div>
 
-            <div class="card" id="card-temperatura">
+            <div class="card" id="card-temperatura" data-aos="fade-right">
                 <a href="temperatura.html">
                     <div>
                         <img src="assets/img/index/temperatura.jpg" alt="Imagem Ilustrativa" class="imagens-index">
@@ -83,14 +85,15 @@
 
                         <h3>API de temperatura:</h3> <br>
                         <p>
-                            Fornece informações precisas sobre as condições climáticas atuais de diferentes locais em todo o mundo
+                            Fornece informações precisas sobre as condições climáticas atuais de diferentes locais em
+                            todo o mundo
                         </p>
 
                     </div>
                 </a>
             </div>
 
-            <div class="card" id="card-jsonInterno">
+            <div class="card" id="card-jsonInterno" data-aos="fade-right">
                 <a href="jsonInterno.html">
                     <div>
                         <img src="assets/img/index/jsonInterno.png" alt="Imagem Ilustrativa" class="imagens-index">
@@ -107,7 +110,7 @@
                 </a>
             </div>
 
-            <div class="card" id="card-ecommerce">
+            <div class="card" id="card-ecommerce" data-aos="fade-right">
                 <a href="ecommerce.html">
                     <div>
                         <img src="assets/img/index/ecommerce.png" alt="Imagem Ilustrativa" class="imagens-index">
@@ -152,6 +155,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
